@@ -7,12 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Position {
-    private int row;
-    private int column;
+public class Piece {
+    protected Position position;
+    private Board board;
 
-    @Override
-    public String toString() {
-        return row + "," + column;
+    protected Board getBoard() {
+        return board;
     }
 }
