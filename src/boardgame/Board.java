@@ -1,9 +1,10 @@
 package src.boardgame;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public class Board {
 
     private int rows;
@@ -17,6 +18,14 @@ public class Board {
         this.rows = rows;
         this.columns = columns;
         pieces = new Piece[rows][columns];
+    }
+
+    public int getRows() {
+        return rows;
+    }
+
+    public int getColumns() {
+        return columns;
     }
 
     public Piece piece(int row, int column) {
