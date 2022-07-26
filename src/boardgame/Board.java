@@ -20,14 +20,6 @@ public class Board {
         pieces = new Piece[rows][columns];
     }
 
-    public int getRows() {
-        return rows;
-    }
-
-    public int getColumns() {
-        return columns;
-    }
-
     public Piece piece(int row, int column) {
         if (!positionExists(row, column)) {
             throw new BoardException("Position not on the board");
