@@ -1,16 +1,12 @@
 package src.chess.pieces;
 
-import lombok.Data;
 import src.boardgame.Board;
 import src.boardgame.Position;
 import src.chess.ChessMatch;
 import src.chess.ChessPiece;
 import src.chess.Color;
 
-import java.net.PortUnreachableException;
-
 public class Pawn extends ChessPiece {
-
     private ChessMatch chessMatch;
 
     public Pawn(Board board, Color color, ChessMatch chessMatch) {
@@ -54,7 +50,6 @@ public class Pawn extends ChessPiece {
                     mat[right.getRow() - 1][right.getColumn()] = true;
                 }
             }
-
         } else {
             p.setValues(position.getRow() + 1, position.getColumn());
             if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
