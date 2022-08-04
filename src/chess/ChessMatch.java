@@ -11,7 +11,6 @@ import src.chess.pieces.Pawn;
 import src.chess.pieces.Queen;
 import src.chess.pieces.Rook;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
